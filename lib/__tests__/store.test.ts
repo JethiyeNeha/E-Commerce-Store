@@ -22,22 +22,23 @@ describe('Store - Cart Operations', () => {
   });
 
   test('should increase quantity when adding same product', () => {
-    store.addToCart('user1', {
-      productId: 'prod-1',
-      name: 'Test Product',
+    // Start fresh for this test
+    const cart = store.addToCart('user-qty-test', {
+      productId: 'prod-qty',
+      name: 'Quantity Test Product',
       price: 100,
       quantity: 1,
     });
 
-    const cart = store.addToCart('user1', {
-      productId: 'prod-1',
-      name: 'Test Product',
+    const updatedCart = store.addToCart('user-qty-test', {
+      productId: 'prod-qty',
+      name: 'Quantity Test Product',
       price: 100,
       quantity: 2,
     });
 
-    expect(cart.items.length).toBe(1);
-    expect(cart.items[0].quantity).toBe(3); // 1 + 2
+    expect(updatedCart.items.length).toBe(1);
+    expect(updatedCart.items[0].quantity).toBe(3); // 1 + 2
   });
 
   test('should get cart by user ID', () => {
