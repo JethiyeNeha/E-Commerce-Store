@@ -17,14 +17,14 @@ const customJestConfig = {
     '**/__tests__/**/*.test.[jt]s?(x)',
     '**/?(*.)+(spec|test).[jt]s?(x)',
   ],
-  collectCoverageFrom: [
-    'app/**/*.{js,jsx,ts,tsx}',
-    'components/**/*.{js,jsx,ts,tsx}',
-    'lib/**/*.{js,jsx,ts,tsx}',
-    '!**/*.d.ts',
-    '!**/node_modules/**',
-    '!**/.next/**',
-  ],
+collectCoverageFrom: [
+  'src/app/**/*.{js,jsx,ts,tsx}',
+  'src/components/**/*.{js,jsx,ts,tsx}',
+  'src/lib/**/*.{js,jsx,ts,tsx}',
+  '!**/*.d.ts',
+  '!**/node_modules/**',
+  '!**/.next/**',
+],
 }
 
 // createJestConfig is exported this way to ensure that next/jest can load the Next.js config which is async

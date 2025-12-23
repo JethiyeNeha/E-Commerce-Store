@@ -152,7 +152,7 @@ export default function CheckoutPage() {
                 onChange={(e) => setDiscountCode(e.target.value.toUpperCase())}
                 placeholder="Enter discount code"
                 disabled={discountApplied > 0}
-                className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent disabled:bg-gray-100"
+                className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent disabled:bg-gray-100 text-black"
               />
 
               {discountApplied > 0 ? (
@@ -196,20 +196,20 @@ export default function CheckoutPage() {
             <input
               type="text"
               placeholder="1234 5678 9012 3456"
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg mb-3"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg mb-3 placeholder-gray-500"
               disabled
             />
             <div className="grid grid-cols-2 gap-3">
               <input
                 type="text"
                 placeholder="MM/YY"
-                className="px-4 py-2 border border-gray-300 rounded-lg"
+                className="px-4 py-2 border border-gray-300 rounded-lg placeholder-gray-500"
                 disabled
               />
               <input
                 type="text"
                 placeholder="CVV"
-                className="px-4 py-2 border border-gray-300 rounded-lg"
+                className="px-4 py-2 border border-gray-300 rounded-lg placeholder-gray-500"
                 disabled
               />
             </div>

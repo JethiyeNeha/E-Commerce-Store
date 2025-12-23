@@ -108,7 +108,7 @@ export default function ProductsPage() {
                 <button
                   onClick={() => handleAddToCart(product)}
                   disabled={cartLoading && addedToCart === product.id}
-                  className={`flex items-center space-x-2 px-4 py-2 rounded-lg font-medium transition-all duration-200 ${
+                  className={`flex items-center space-x-2 px-4 py-2 rounded-lg font-medium transition-all duration-200 cursor-pointer ${
                     addedToCart === product.id
                       ? "bg-green-600 text-white"
                       : "bg-blue-600 hover:bg-blue-700 text-white hover:shadow-lg"
