@@ -56,7 +56,7 @@ A modern, full-stack e-commerce application built with Next.js 16, TypeScript, a
 ## Installation & Setup
 
 ### Prerequisites
-- Node.js 18+ installed
+- Node.js 20 installed
 - npm or yarn package manager
 
 ### Steps
@@ -68,6 +68,7 @@ git clone https://github.com/JethiyeNeha/E-Commerce-Store.git
 
 2. **Install dependencies**
 ```bash
+nvm use 20
 npm install
 ```
 
@@ -187,7 +188,26 @@ const USER_ID = 'user123';  // Change default user
 
 ## Deployment
 
-- **Live App:**   [E-Commerce-App](https://e-commerce-store-gules-ten.vercel.app/)  
+- **Live App:**   [E-Commerce-App](https://e-commerce-store-gules-ten.vercel.app/)
+
+## Screenshots
+
+Here’s a glimpse of the app in action  
+
+### Homepage  
+![Homepage](src/assets/homepage.png)
+
+### Shopping Cart  
+![Shopping Cart](src/assets/shoppingCart.png)
+
+### Order Placed  
+![Order Placed](src/assets/orderPlaced.png)
+
+### Empty Cart  
+![Empty Cart](src/assets/emptyCart.png)
+
+### Admin Dashboard  
+![Admin Dashboard](src/assets/adminDashboard.png)
 
 
 
