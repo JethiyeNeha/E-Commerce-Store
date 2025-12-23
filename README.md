@@ -2,10 +2,30 @@
 
 A modern, full-stack e-commerce application built with Next.js 16, TypeScript, and TailwindCSS. Features an intelligent discount code system that rewards every nth order with automatic coupon generation.
 
+## Links
+
+- **Live App:** [E-Commerce-App](https://e-commerce-store-gules-ten.vercel.app/)
+
+## Preview 
+
+### Homepage  
+![Homepage](src/assets/homepage.png)
+
+### Shopping Cart  
+![Shopping Cart](src/assets/shoppingCart.png)
+
+### Order Placed  
+![Order Placed](src/assets/orderPlaced.png)
+
+### Empty Cart  
+![Empty Cart](src/assets/emptyCart.png)
+
+### Admin Dashboard  
+![Admin Dashboard](src/assets/adminDashboard.png)
+
 ## Features
 
 ### Customer Features
-- **Product Browsing**: Browse a curated collection of products with beautiful card layouts
 - **Shopping Cart**: Add, remove, and manage items in your cart
 - **Smart Checkout**: Apply discount codes during checkout with real-time validation
 - **Order Confirmation**: Beautiful success page with order details
@@ -25,7 +45,7 @@ A modern, full-stack e-commerce application built with Next.js 16, TypeScript, a
 - **Icons**: Lucide React
 - **State Management**: React Context API
 - **API**: Next.js API Routes (Node.js)
-- **Storage**: In-memory store (as per requirements)
+- **Storage**: In-memory store
 
 ## Project Structure
 
@@ -186,30 +206,6 @@ Edit `context/CartContext.tsx`:
 const USER_ID = 'user123';  // Change default user
 ```
 
-## Deployment
-
-- **Live App:**   [E-Commerce-App](https://e-commerce-store-gules-ten.vercel.app/)
-
-## Screenshots
-
-Here’s a glimpse of the app in action  
-
-### Homepage  
-![Homepage](src/assets/homepage.png)
-
-### Shopping Cart  
-![Shopping Cart](src/assets/shoppingCart.png)
-
-### Order Placed  
-![Order Placed](src/assets/orderPlaced.png)
-
-### Empty Cart  
-![Empty Cart](src/assets/emptyCart.png)
-
-### Admin Dashboard  
-![Admin Dashboard](src/assets/adminDashboard.png)
-
-
 
 ### Assumptions Made
 
@@ -218,7 +214,6 @@ Here’s a glimpse of the app in action
 3. Mock payment processing (no real transactions)
 4. Simplified product catalog (in production, would use database)
 
-
 ---
 
-**Note**: This is a demonstration project with simulated payment and in-memory storage. For production use, implement proper authentication, persistent storage, and payment processing.
+**Note**: This is a demonstration project with simulated payment and in-memory storage. For production use, we must implement proper authentication, persistent storage, and payment processing.
